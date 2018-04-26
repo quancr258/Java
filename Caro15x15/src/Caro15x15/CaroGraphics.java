@@ -157,7 +157,7 @@ public class CaroGraphics extends javax.swing.JFrame
         L2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         L2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         L2.setText("O:");
-        jPanel2.add(L2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 307, -1, 20));
+        jPanel2.add(L2, new org.netbeans.lib.awtextra.AbsoluteConstraints(25, 307, 140, 20));
 
         txt2.setEditable(false);
         txt2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -211,7 +211,7 @@ public class CaroGraphics extends javax.swing.JFrame
         L1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         L1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         L1.setText("X:");
-        jPanel2.add(L1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 230, -1, -1));
+        jPanel2.add(L1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 230, 140, -1));
 
         txt1.setEditable(false);
         txt1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -410,8 +410,8 @@ public class CaroGraphics extends javax.swing.JFrame
             }
             start = 1;
             user = -1;
-            n += CBnum.getSelectedIndex();
-            m2 += CBnum.getSelectedIndex();
+            n = 3 + CBnum.getSelectedIndex();
+            m2 = 3 + CBnum.getSelectedIndex();
             if(m2 > 4) m2 = 5;
             txt1.setEnabled(true);
             txt1.setText("0");
@@ -508,8 +508,8 @@ public class CaroGraphics extends javax.swing.JFrame
                 Icon1.setEnabled(true);
                 Icon2.setEnabled(false);
                 del();
-                n += CBnum.getSelectedIndex();
-                m2 += CBnum.getSelectedIndex();
+                n = 3 + CBnum.getSelectedIndex();
+                m2 = 3 + CBnum.getSelectedIndex();
                 if(m2 > 4) m2 = 5;
                 num = 0;
                 khoitao();

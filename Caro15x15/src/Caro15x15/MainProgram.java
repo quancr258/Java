@@ -6,6 +6,7 @@
 package Caro15x15;
 
 import java.awt.Graphics;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -47,6 +48,7 @@ public class MainProgram
             public void run() 
             {
                 new CaroGraphics().setVisible(true);
+                JOptionPane.showMessageDialog(null, "Luật chơi:\n- Người chơi 1 ( X ) được quyền đi trước.\n- 2 Người chơi (tính cả COM) lần lượt đánh các nước cờ trên bàn cờ.\n- Khi đạt đủ Điều kiện thắng theo chiều Ngang, Dọc, Chéo thì thắng. Hết bàn cờ xem như Hòa\n** Điều kiện thắng:\n      3x3: 3 ô\n      4x4: 4 ô\n>= 5x5: 5 ô","Hướng dẫn:",JOptionPane.INFORMATION_MESSAGE);
             }
         });
     }
